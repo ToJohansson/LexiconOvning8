@@ -1,3 +1,21 @@
+.logo {
+  position: fixed; /* Fäster logon i fönstrets hörn */
+  top: 8px;
+  left: 16px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.logo img {
+  height: auto;
+  max-width: 90vw; /* Hindrar överspill på små skärmar */
+}
+@media (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -6,11 +24,64 @@ h5,
 h6 {
   text-transform: capitalize;
 }
-.lead {
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #b5b2b2;
-  margin-bottom: 1.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 300;
+
+.img-frame {
+  border: 2px solid #8d8a8a;
+}
+@media (max-width: 850px) {
+  .img-frame {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card img {
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 2px solid #8d8a8a;
+  height: 150px;
+  width: 150px;
+  z-index: 2;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.bg-image-card-companies {
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5588564ae4b08fd2d8e631f1/1449856284744-06S79LSCMO52HKQDPSIN/image-asset.jpeg?format=1500w");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  alt: "Coffee companies";
+}
+
+.bg-image-card-private {
+  background-image: url("https://as2.ftcdn.net/v2/jpg/00/69/51/37/1000_F_69513792_jRdYvJqUI6eUagw60LoyWUykxhxXIads.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  alt: "Private coffee companies";
+}
+
+.card > div {
+  position: relative;
+  z-index: 2;
+  padding: 1rem;
 }

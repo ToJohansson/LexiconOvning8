@@ -77,14 +77,6 @@
 .btn-light:hover,
 .btn-light:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
-/*
- * Base structure
- */
-body {
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
 }
 
 .cover-container {
@@ -96,7 +88,7 @@ body {
  */
 
 .nav-masthead .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #939393;
   border-bottom: 0.25rem solid transparent;
 }
 
@@ -110,8 +102,8 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: #d9ab4e;
+  border-bottom-color: #d9ab4e;
 }
 .full-height {
   height: 100%;

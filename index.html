@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Coffee Party</title>
+    <link rel="icon" href="/images/coffepartylogo32.png" type="image/x-icon" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -111,10 +113,21 @@
       </ul>
     </div>
 
+    <picture class="logo">
+      <source
+        media="(max-width: 1050px)"
+        srcset="/images/coffeepartylogosmalltransparent.png"
+      />
+      <img
+        src="/images/coffepartylogo500transparent.png"
+        alt="Coffee Party logo"
+      />
+    </picture>
+
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto">
-        <div>
-          <h1 class="float-md-start">Welcome to coffee party</h1>
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>Welcome!</h1>
           <nav class="nav nav-masthead justify-content-center float-md-end">
             <a
               class="nav-link fw-bold py-1 px-0 active"
@@ -132,13 +145,14 @@
 
       <section class="mt-5 mb-3">
         <img
-          class="resize"
+          class="resize img-frame"
           src="https://picsum.photos/id/1060/536/354?blur=2"
+          alt="Coffee Pour"
         />
       </section>
       <main class="px-3">
         <h2>Who are we?</h2>
-        <p class="lead">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
           vulputate dolor sit amet purus pharetra, et tincidunt magna consequat.
           Integer mollis mi id tortor scelerisque, ac tincidunt ligula euismod.
@@ -150,7 +164,7 @@
         </p>
 
         <h2>What do we do?</h2>
-        <p class="lead">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           euismod ligula ut ex vulputate, a convallis purus tincidunt. Integer
           fringilla purus at ex sollicitudin, ac volutpat eros vestibulum. Sed
@@ -161,7 +175,7 @@
         </p>
 
         <h2>Why us?</h2>
-        <p class="lead">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet
           nisi ut nisl malesuada sollicitudin. Mauris id dui sed nulla lacinia
           auctor in eu arcu. Aliquam erat volutpat. Nulla vel nibh suscipit,
@@ -172,7 +186,7 @@
         </p>
 
         <h2>Coffee Party, how it works!</h2>
-        <p class="lead">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at
           nisi a lorem interdum tincidunt. Integer sodales odio a metus pretium,
           ac fermentum enim maximus. Nunc nec efficitur lectus. Aliquam erat
